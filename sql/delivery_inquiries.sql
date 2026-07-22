@@ -9,8 +9,7 @@ CREATE TABLE IF NOT EXISTS delivery_inquiries (
     status TEXT NOT NULL DEFAULT '답변대기'
         CHECK (status IN ('답변대기', '답변완료')),
     answer TEXT,
-    created_at TIMESTAMP NOT NULL
-);
+    created_at TIMESTAMP NOT NULL)
 
 -- 예시 배달 문의 데이터 3건
 INSERT INTO delivery_inquiries (

@@ -2,18 +2,13 @@
 
 CREATE TABLE IF NOT EXISTS delivery_inquiries (
     id TEXT PRIMARY KEY,
-
     member_id TEXT NOT NULL,
     restaurant_id TEXT NOT NULL,
-
     inquiry_content TEXT NOT NULL
         CHECK (char_length(trim(inquiry_content)) > 0),
-
     status TEXT NOT NULL DEFAULT '답변대기'
         CHECK (status IN ('답변대기', '답변완료')),
-
     answer TEXT,
-
     created_at TIMESTAMP NOT NULL
 );
 

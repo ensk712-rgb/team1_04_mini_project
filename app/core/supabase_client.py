@@ -12,7 +12,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 from supabase import Client, create_client
 
-# asd
+
 # 이 파일은 다음 위치에 있습니다.
 # 02_supabase-ai-backend/03_supabase-db-and-auth/02_supabase-table-and-crud/supabase_client.py
 # parents[2]는 02_supabase-ai-backend 폴더입니다.
